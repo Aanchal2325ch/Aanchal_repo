@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build SuccessFul'
-        echo 'Done'
+        
         sleep 1
       }
       
