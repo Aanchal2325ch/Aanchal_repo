@@ -7,11 +7,7 @@ pipeline {
         echo 'Done'
         sleep 1
       }
-      steps {
-        echo 'Build2 SuccessFul'
-        echo 'Done2'
-        
-      }
+      
     }
 
     stage('Test') {
