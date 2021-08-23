@@ -1,18 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>Rest_APIDemo</groupId>
-  <artifactId>Rest_APIDemo</artifactId>
+  <groupId>Rest_Test</groupId>
+  <artifactId>Rest_Test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-   <dependencies>
- 
-  <dependency>
+  <dependencies>
+  <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+<dependency>
     <groupId>io.rest-assured</groupId>
     <artifactId>rest-assured</artifactId>
     <version>4.3.0</version>
     <scope>test</scope>
 </dependency>
- <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
- 
+  <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
 <dependency>
     <groupId>com.googlecode.json-simple</groupId>
     <artifactId>json-simple</artifactId>
@@ -24,6 +23,7 @@
     <artifactId>jackson-core-asl</artifactId>
     <version>1.9.13</version>
 </dependency>
+
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
     <groupId>org.testng</groupId>
@@ -31,6 +31,7 @@
     <version>6.8</version>
     <scope>test</scope>
 </dependency>
+
 <!-- https://mvnrepository.com/artifact/cn.sexycode/my-sql -->
 <dependency>
     <groupId>cn.sexycode</groupId>
@@ -43,5 +44,19 @@
     <artifactId>selenium-java</artifactId>
     <version>3.141.59</version>
 </dependency>
-</dependencies>
+  </dependencies>
+  <build>
+<plugins>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-surefire-plugin</artifactId>
+<version>3.0.0-M5</version>
+<configuration>
+<suiteXmlFiles>
+<suiteXmlFile>testng.xml</suiteXmlFile>
+</suiteXmlFiles>
+</configuration>
+</plugin>
+</plugins>
+</build>
 </project>
