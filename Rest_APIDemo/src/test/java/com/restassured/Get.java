@@ -11,7 +11,7 @@ public class Get {
 	
 	public void getAll() {
 		when()
-		.get("http://localhost:8080/api/users/2")
+		.get("https://reqres.in/api/users/2"")
 		.then()
 		.and()
 		.log().all();
