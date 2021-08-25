@@ -1,1 +1,0 @@
-package practice.rmg.git.paramaterization;
