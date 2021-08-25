@@ -7,7 +7,7 @@ public class Pipeline_Demo {
 	@Test
 	public void get() {
 		when()
-		.get("http://localhost:8080/api/unknown")
+		.get("https://reqres.in/api/unknown")
 		.then()
 		.and().log().all();
 		
