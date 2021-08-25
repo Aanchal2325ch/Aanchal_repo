@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.rest.RunParameters"/>
+     
       <class name="com.rest.Get"/>
       <class name="com.rest.Pipeline_Demo"/>
     </classes>
